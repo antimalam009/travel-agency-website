@@ -26,6 +26,10 @@ html {
 .container {
   max-width: 144rem;
   margin: 0 auto;
+  padding: 6rem 6rem;
+}
+
+header .container {
   padding: 3rem 6rem;
 }
 
@@ -227,3 +231,78 @@ html {
 }
 
 /***** End hero section *****/
+
+/***** services section *****/
+.center-text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.center-text h2 {
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.center-text span {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--p-color);
+  display: inline-block;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7rem 5rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.services-content:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.services-content span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+
+.services-content p {
+  font-size: 1.6rem;
+  color: var(--p-color);
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.services-content img {
+  max-width: 8rem;
+
+  height: auto;
+}
+
+.services-two {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/***** End services section *****/
