@@ -8,10 +8,15 @@
   font-family: "Volkhov", serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --bg-color: #fff;
   --btn-color: #ffcc00;
   --text-color: #212832;
+  --p-color: #5e6282;
 }
 
 html {
@@ -19,7 +24,7 @@ html {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 144rem;
   margin: 0 auto;
   padding: 3rem 6rem;
 }
@@ -117,3 +122,108 @@ html {
 .sign-up::after {
   display: none;
 }
+
+/***** hero section *****/
+.hero-section .hero-section-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  position: relative;
+  word-spacing: -0.3rem;
+}
+
+.hero-text h1::before {
+  content: "Best Destinations around the world";
+  position: absolute;
+  font-size: 1.8rem;
+  top: -2.5rem;
+  letter-spacing: 0.1rem;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  word-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #df6951;
+}
+
+.hero-text h1 span {
+  position: relative;
+}
+
+.hero-text h1 span::after {
+  content: url(images/Decore.png);
+  position: absolute;
+  top: 1.5rem;
+  left: -1.5rem;
+  z-index: -1;
+}
+
+.hero-text p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 2rem 0 4rem 0;
+  color: var(--p-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-buttons .btn {
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  background-color: var(--btn-color);
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.secondary-btn-icn {
+  font-size: 6rem;
+  color: #df6951;
+  box-shadow: 0 0 0 0;
+}
+
+.secondary-btn-text {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--p-color);
+  font-weight: 500;
+}
+
+.shape-one {
+  position: absolute;
+  top: -10rem;
+  right: -4rem;
+  z-index: -1;
+}
+
+/***** End hero section *****/
