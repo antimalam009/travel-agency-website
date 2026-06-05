@@ -7,3 +7,113 @@
   list-style: none;
   font-family: "Volkhov", serif;
 }
+
+:root {
+  --bg-color: #fff;
+  --btn-color: #ffcc00;
+  --text-color: #212832;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 6rem;
+}
+
+.header-section-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section-box ul {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.header-section-box ul li a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.header-section-box ul li a::after {
+  content: "";
+  border-bottom: 0.2rem solid var(--text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -0.2rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  width: 0;
+}
+
+.header-section-box ul li a:hover::after {
+  width: 100%;
+}
+
+.header-section-box ul li a span {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-section-box ul li .drop-down {
+  position: relative;
+}
+
+.header-section-box ul li .drop-down::after {
+  content: "";
+  border-bottom: 0.2rem solid var(--text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -0.2rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  width: 0;
+}
+
+.header-section-box ul .drop-down:hover::after {
+  width: 100%;
+}
+
+.sign-up {
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  border: 0.1rem solid var(--text-color);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.sign-up:hover {
+  background-color: var(--text-color);
+  color: white;
+}
+
+.sign-up::after {
+  display: none;
+}
