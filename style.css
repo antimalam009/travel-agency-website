@@ -226,7 +226,7 @@ header .container {
 .shape-one {
   position: absolute;
   top: -10rem;
-  right: -4rem;
+  right: -8rem;
   z-index: -1;
 }
 
@@ -322,3 +322,58 @@ header .container {
   border-top-right-radius: 5rem;
 } */
 /***** End services section *****/
+
+/***** destination section *****/
+.destination-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.destination-content img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  aspect-ratio: 2 / 2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.destination-content {
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.destination-text {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.destination-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.destination-text span {
+  font-size: 1.8rem;
+  color: var(--p-color);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.destination-text p {
+  margin-top: 0.8rem;
+}
+
+.destination-text p i {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+/***** End destination section *****/
