@@ -275,6 +275,7 @@ header .container {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   cursor: pointer;
+  z-index: 1;
 }
 
 .services-content:hover {
@@ -302,7 +303,22 @@ header .container {
   height: auto;
 }
 
-.services-two {
+/* .services-two {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
+  position: relative;
+  z-index: 1;
+} */
+
+/* .services-two::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #df6951;
+  position: absolute;
+  bottom: -5rem;
+  left: -2rem;
+  z-index: -1;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+} */
 /***** End services section *****/
